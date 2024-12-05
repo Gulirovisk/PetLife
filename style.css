@@ -14,25 +14,21 @@ body {
 
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 16px;
-}
-
 header {
     background-color: #FF9A6C;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px;
-    flex-wrap: wrap;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 header nav a {
     color: #FFFFFF;
     font-weight: 600;
-    padding: 16px;
+    padding: 32px;
     text-decoration: none;
 }
 
@@ -40,26 +36,20 @@ header nav a {
     display: flex;
     align-items: center;
     gap: 32px;
-    flex-wrap: wrap;
-    padding: 32px 0;
-    text-align: center;
+    padding: 18px 80px 128px 80px;
+    position: relative;
 }
 
 h1,
 h2 {
     font-weight: 600;
-    font-size: 24px;
-    margin-bottom: 16px;
+    font-size: 32px;
+    margin-bottom: 32px;
 }
 
 .paragrafo {
     line-height: 150%;
-    margin-bottom: 16px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+    margin-bottom: 32px;
 }
 
 .botao {
@@ -89,9 +79,8 @@ img {
 #clinica {
     display: flex;
     align-items: center;
-    gap: 32px;
-    flex-wrap: wrap; /* Permite quebra em telas menores */
-    padding: 32px 0;
+    gap: 64px;
+    padding: 63px 80px;
 }
 
 #clinica li {
@@ -101,7 +90,7 @@ img {
 
 #farmacia {
     text-align: center;
-    padding: 32px 0;
+    pad: 64px 80px;
 }
 
 #farmacia img {
@@ -115,10 +104,9 @@ img {
 
 #duvidas {
     display: flex;
-    align-items: flex-start;
-    gap: 32px;
-    flex-wrap: wrap;
-    padding: 32px 0;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
 }
 
 .duvida {
@@ -161,14 +149,9 @@ img {
 footer {
     background-color: rgba(255, 152, 108, 0.253);
     display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
     justify-content: space-between;
-    padding: 32px 0;
-}
-
-footer div {
-    flex: 1 1 300px;
+    gap: 80px;
+    padding: 64px 80px;
 }
 
 footer img,
@@ -210,48 +193,4 @@ footer nav a {
 #copyright a {
     color: #FF9A6C;
     text-decoration: none;
-}
-
-@media (max-width: 1024px) {
-    header {
-        padding: 16px;
-    }
-
-    #inicio,
-    #clinica {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    footer {
-        text-align: center;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 768px) {
-    header nav a {
-        padding: 8px;
-        font-size: 14px;
-    }
-
-    h1, h2 {
-        font-size: 20px;
-    }
-
-    .botao, .botao-transparente {
-        padding: 12px 16px;
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    footer p {
-        font-size: 12px;
-    }
 }
