@@ -120,6 +120,7 @@ h2 {
     padding: 24px;
 }
 
+
 .duvida img {
     position: absolute;
     top: 32px;
@@ -132,6 +133,16 @@ h2 {
     border-left: 1px solid #FF9A6C;
     border-radius: 0 0 10px 10px;
     margin-top: -8px;
+    padding: 0 24px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;   
+    transition: max-height 0.4s ease, opacity 0.2s ease, padding 0.4s ease;
+}
+
+.duvida.ativa .paragrafo {
+    max-height: 500px;
+    opacity: 1;
     padding: 24px;
 }
 
@@ -148,7 +159,6 @@ footer .titulo {
     display: block;
     font-weight: 600;
     margin-bottom: 24px;
-
 }
 
 footer nav a {
@@ -156,8 +166,6 @@ footer nav a {
     display: block;
     margin-bottom: 16px;
     text-decoration: none;
-
-
 }
 
 footer p {
