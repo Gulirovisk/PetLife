@@ -56,7 +56,7 @@ h2 {
     background-color: #FF9A6C;
     padding: 16px 32px;
     color: #FFFFFF;
-    border-radius: 10px;
+    border-radius: 20px 0 20px 0;
     text-decoration: none;
 }
 
@@ -81,6 +81,7 @@ h2 {
     align-items: center;
     gap: 64px;
     padding: 63px 80px;
+    padding-bottom: 100px;
 }
 
 #clinica li {
@@ -90,11 +91,12 @@ h2 {
 
 #farmacia {
     text-align: center;
-    pad: 64px 80px;
+    padding: 64px 80px 100px 80px;
+    margin-bottom: 30px;
 }
 
 #farmacia img {
-    margin: 64px auto;
+    margin: 30px auto;
 }
 
 #farmacia .paragrafo {
@@ -111,15 +113,18 @@ h2 {
 
 .duvida {
     position: relative;
+    align-items: center;
+    position: relative;
 }
 
 .duvida h3 {
+    flex: 1;
     border: 2px solid #FF9A6C;
-    border-radius: 10px;
+    border-radius: 20px 0 20px 0;
     cursor: pointer;
     padding: 24px;
+    padding-right: 64px;
 }
-
 
 .duvida img {
     position: absolute;
@@ -193,4 +198,115 @@ footer nav a {
 #copyright a {
     color: #FF9A6C;
     text-decoration: none;
+}
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+    }
+
+    header a img {
+        margin-bottom: 16px;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    header nav a {
+        padding: 8px;
+    }
+
+    #inicio {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    #inicio img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #inicio h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #clinica {
+        flex-direction: column;
+        text-align: center;
+        gap: 32px;
+        padding: 32px 16px;
+    }
+
+    #clinica img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #farmacia {
+        padding: 32px 16px;
+    }
+
+    #farmacia img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #duvidas {
+        flex-direction: column;
+        padding: 32px 16px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 32px;
+        text-align: center;
+        padding: 32px 16px;
+    }
+}
+
+/* Mobile-first (menores telas como smartphones) */
+@media (max-width: 768px) {
+    header nav {
+        align-items: center;
+        gap: 8px;
+    }
+
+    header {
+        padding: 12px;
+    }
+
+    #inicio h1 {
+        font-size: 20px;
+    }
+
+    .botao,
+    .botao-transparente {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 8px 0;
+    }
+
+    #duvidas {
+        gap: 16px;
+    }
+
+    #duvidas img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        text-align: center;
+    }
 }
